@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="./Style/style.css">
 </head>
 
-<body>
+<body class="font-sans">
     <header>
         <!-- navbar -->
-        <section class=" shadow-md bg-cyan-500  shadow-cyan-500/50 opacity-50">
-            <div class="navbar bg-base-100">
+        <section>
+            <div class="navbar bg-base-100 text-white opacity-100">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -42,9 +42,9 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="btn btn-ghost normal-case text-xl">Reza</a>
+                    <a href="./cv/cv.pdf" download class="btn btn-ghost normal-case text-xl">Reza</a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-center hidden lg:flex ">
                     <ul class="menu menu-horizontal px-1">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Skills</a></li>
@@ -65,13 +65,74 @@
                 </div>
             </div>
         </section>
-        <section
-            class="  bg-cover  bg-blend-overlay bg-gradient-to-r from-sky-500 to-indigo-500 h-[calc(100vh-64px)] w-[50vw] "
-            style="background-image: url(../img/COVER.png); background-size:cover; width: 100vw;">
+        <!-- first back ground image -->
+        <section class="bg-cover h-[calc(100vh-64px)] flex-col items-center p-5 font-mono "
+            style="background-image: url(../img/COVER.png); background-size:auto 100%; width: 100vw; background-repeat:none; background-position: right ;background-repeat: no-repeat; background-color:black">
+            <div class=" bg-black bg-opacity-30 lg:w-2/4 p-10 justify-center b-2">
+                <h3 class=" items-center text-2xl pt-8 lg:text-5xl  lg:pt-40  pb-4 font-medium  lg:text-center"><span
+                        class="text-teal-400 font-extrabold">Hello
+                    </span>
+                    World!
+                </h3>
+                <div class="divider"></div>
+                <p class="  font-sans text-left lg:text-justify justify-center">
+                    This is <span class="text-teal-400 ">Reza</span>.As a Software Engineering student at Daffodil
+                    International University, I'm passionate about exploring the vast realm of technology. Embracing
+                    diverse
+                    programming languages and methodologies, I'm eager to create innovative solutions. Continuous
+                    learning
+                    and problem-solving drive me to make a positive impact on the world through software.
+                </p>
+                <p class="font-sans text-left lg:text-justify  justify-center pt-8">Determined to excel, I embrace
+                    challenges
+                    and collaborate to develop scalable and efficient software solutions.</p>
+                <!-- Open the modal using ID.showModal() method -->
+                <div class="divider"></div>
 
+                <div class=" justify-center pt-10"><!-- Open the modal using ID.showModal() method -->
+                    <button class="btn btn-outline btn-info " onclick="my_modal_5.showModal()">Explore more</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <form method="dialog" class="modal-box">
+                            <h3 class="font-bold text-lg">Not avaible yet</h3>
+                            <p class="py-4">Press ESC key or click the button below to close</p>
+                            <div class="modal-action">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn">Close</button>
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
         </section>
+        <!-- first back ground image end -->
     </header>
     <main>
+        <!-- programming knowladge -->
+        <div class=" flex flex-row justify-between flex-wrap  ml-10 mr-10 lg:ml-40 lg:mr-40 items-center md: p-20 ">
+
+            <img src="./img/code.svg" alt="coding image">
+
+
+            <p class="  text-left lg:text-right lg:w-1/4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        </div>
+
+        <section>
+            <div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>Unlock Infinite Creativity: Embrace the Power of Coding!</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>
