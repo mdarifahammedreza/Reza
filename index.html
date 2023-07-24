@@ -42,7 +42,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="./cv/cv.pdf" download class="btn btn-ghost normal-case text-xl">Reza</a>
+                    <a href="./index.html" class="btn btn-ghost normal-case text-xl">Reza</a>
                 </div>
                 <div class="navbar-center hidden lg:flex ">
                     <ul class="menu menu-horizontal px-1">
@@ -61,7 +61,7 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a href="#" class="btn">Download CV</a>
+                    <a href="./cv/cv.pdf" class="btn" download>Download CV</a>
                 </div>
             </div>
         </section>
@@ -108,12 +108,14 @@
     </header>
     <main>
         <!-- programming knowladge -->
-        <div class=" flex flex-row justify-between flex-wrap  ml-10 mr-10 lg:ml-40 lg:mr-40 items-center md: p-20 ">
+        <div
+            class=" flex  flex-col lg:flex-row  justify-between gap-40  ml-10 mr-10 lg:ml-40 lg:mr-40 items-center  text-center md: p-20 ">
 
-            <img src="./img/code.svg" alt="coding image">
+            <img class=" bg-white rounded-full w-96" src="./img/code.png" alt="coding image">
 
 
-            <p class="  text-left lg:text-right lg:w-1/4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="   text-center lg:text-right lg:w-1/4">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.</p>
 
         </div>
 
@@ -132,6 +134,27 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- language experince -->
+        <section class="flex flex-col gap-10 ">
+            <progress class="progress progress-secondary w-56" value="0" max="100">C</progress>
+            <progress class="progress progress-secondary w-56" value="10" max="100">C++</progress>
+            <progress class="progress progress-secondary w-56" value="40" max="100">Java</progress>
+            <progress class="progress progress-secondary w-56" value="70" max="100">Python</progress>
+            <progress class="progress progress-secondary w-56" value="100" max="100">Html5</progress>
+        </section>
+        <section class="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-20 m-40">
+            <div class="radial-progress text-orange-400" style="--value:70; --size:12rem; --thickness: 2rem;">70%</div>
+            <div class="radial-progress" style="--value:70; --size:12rem; --thickness: 2rem;">70%</div>
+            <div class="radial-progress" style="--value:70; --size:12rem; --thickness: 2rem;">70%</div>
+            <div class="radial-progress" style="--value:70; --size:12rem; --thickness: 2rem;">70%</div>
+            <div class="radial-progress" style="--value:70; --size:12rem; --thickness: 2rem;">70%</div>
+            <div class="radial-progress" style="--value:70; --size:12rem; --thickness: 2rem;">70%</div>
+            <div class="radial-progress text-primary" style="--value:80;">C</div>
+            <div class="radial-progress text-primary" style="--value:30;">C++</div>
+            <div class="radial-progress text-primary" style="--value:60;">Java</div>
+            <div class="radial-progress text-primary" style="--value:76;">Python</div>
+            <div class="radial-progress text-primary" style="--value:90;">Html</div>
         </section>
 
     </main>
