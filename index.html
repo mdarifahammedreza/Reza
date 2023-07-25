@@ -15,6 +15,7 @@
 </head>
 
 <body class="font-sans">
+    <div id="preloader"></div>
     <header>
         <!-- navbar -->
         <section>
@@ -31,7 +32,7 @@
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a href="./index.html">Home</a></li>
-                            <li><a href="#">Skills</a></li>
+                            <li><a href="#">Profile</a></li>
                             <li>
                                 <a>More</a>
                                 <ul class="p-2 ">
@@ -47,7 +48,7 @@
                 <div class="navbar-center hidden lg:flex ">
                     <ul class="menu menu-horizontal px-1">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Profile</a></li>
                         <li tabindex="0">
                             <details>
                                 <summary>More</summary>
@@ -107,6 +108,47 @@
         <!-- first back ground image end -->
     </header>
     <main>
+        <!-- card for profile details -->
+        <section class=" text-center mt-10">
+            <h3 class=" text-5xl font-black font-sans text-teal-400 ">Profile</h3>
+            <div class="divider py-1 mt-1"></div>
+            <!-- profile hero -->
+        </section>
+        <div class="hero min-h-screen bg-base-200">
+            <div class="hero-content flex-col lg:flex-row">
+                <img style="background-position: right;width:50%"
+                    src="./img/332391039_542654854341318_1420315632026335247_n.jpg"
+                    class="max-w-sm rounded-lg shadow-2xl" />
+                <div>
+                    <h1 class="text-5xl font-bold text-violet-600">Md Arif Ahammed <span class=" text-teal-400">
+                            Reza</span></h1>
+                    <p class="py-2">Student of Software Engineering,Daffodil International University <br><br>Lorem
+                        ipsum
+                        dolor sit amet consectetur adipisicing elit. A saepe perspiciatis nulla reprehenderit quidem
+                        eligendi corrupti quaerat,.</p>
+                    <div class="divider py-0 "></div>
+                    <div>
+                        <a href="https://www.facebook.com/reza412200/" class="btn rounded-full p-0 m-0"><img
+                                style="height: 30px;" src="./img/facebook.png" alt="facebook icon"></a>
+                        <a href="https://github.com/mdarifahammedreza" class="btn rounded-full p-0 m-0"><img
+                                style="height: 30px;" src="./img/github.png" alt="Github icon"></a>
+                        <a href="https://www.linkedin.com/in/md-arif-ahammed-reza-475201241/"
+                            class="btn rounded-full p-0 m-0"><img style="height: 30px;" src="./img/linkedin.png"
+                                alt="Linkdin icon"></a>
+                        <a href="https://stackoverflow.com/users/22283487/md-arif-ahammed-reza"
+                            class="btn rounded-full p-0 m-0"><img style="height: 30px;" src="./img/stackoverflow.png"
+                                alt="stackoverflow icon"></a>
+                        <a href="https://www.facebook.com/reza412200/" class="btn rounded-full p-0 m-0"><img
+                                style="height: 30px;" src="./img/twitter.png" alt="facebook icon"></a>
+                    </div>
+
+                    <button class="btn btn-primary"><a href="/aboutme.html">know more</a></button>
+                </div>
+            </div>
+        </div>
+        <section>
+
+        </section>
         <!-- programming knowladge -->
         <div
             class=" flex  flex-col lg:flex-row  justify-between gap-40  ml-10 mr-10 lg:ml-40 lg:mr-40 items-center  text-center md: p-20 ">
@@ -197,7 +239,13 @@
             </div>
         </footer>
     </footer>
-
+    <!-- preloader script -->
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
 </body>
 
 </html>
